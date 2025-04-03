@@ -2827,3 +2827,5 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.google.gu
 2025-04-03 11:06:55,842 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\keerthivasan.v\eclipse-workspace\mvn_prj1\src\test\resources
 2025-04-03 11:10:15,525 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\keerthivasan.v\eclipse-workspace\mvn_prj1\src\main\resources
 2025-04-03 11:10:15,527 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\keerthivasan.v\eclipse-workspace\mvn_prj1\src\test\resources
+2025-04-03 11:48:12,071 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\keerthivasan.v\eclipse-workspace\mvn_prj1\src\main\resources
+2025-04-03 11:48:12,072 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\keerthivasan.v\eclipse-workspace\mvn_prj1\src\test\resources
