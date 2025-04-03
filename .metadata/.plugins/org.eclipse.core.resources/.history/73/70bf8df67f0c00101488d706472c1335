@@ -1,9 +1,0 @@
-Feature: Login feature
-
-@set3
-Scenario Outline: Verify login is successfull with valid login credentials
-#Given Login page is displayed 
-When User Click on Login page
-When User enters username and password
-When Login button clicked
-Then The application should display the message "<message>"

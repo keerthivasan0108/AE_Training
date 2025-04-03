@@ -2,13 +2,11 @@ package Tests;
 
 import org.testng.annotations.Test;
 
-import Listener.Listener1;
 import POM_Pages.login_page;
 import POM_Pages.products_page;
 import Utilities.common_methods;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
 
 import static org.testng.Assert.assertEquals;
 
@@ -18,7 +16,7 @@ import java.util.Iterator;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-@Listeners(Listener1.class)
+
 public class NewTest1 extends common_methods{
 	login_page lp;
 	products_page pp;

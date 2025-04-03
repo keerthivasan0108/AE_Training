@@ -1,8 +1,0 @@
-Feature: Login feature
-
-Scenario: Verify login is successfull with valid login credentials
-Given Login page is displayed 
-When User enters valid username and password
-When Login button clicked
-Then Show Products
-

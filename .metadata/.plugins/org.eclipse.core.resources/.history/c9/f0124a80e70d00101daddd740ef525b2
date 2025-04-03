@@ -1,8 +1,0 @@
-Feature: Add to cart
-
-@set3
-Scenario: Verify the user able to add to cart the product 
-When User choose categories and add to cart
-When User click shopping_cart
-When User click checkout
-

@@ -1,9 +1,0 @@
-package testNG;
-
-import org.testng.annotations.Test;
-
-public class new_group {
-  @Test
-  public void f() {
-  }
-}
