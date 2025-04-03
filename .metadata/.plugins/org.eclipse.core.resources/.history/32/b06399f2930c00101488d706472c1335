@@ -1,0 +1,3 @@
+Feature: Add to cart
+When User click addtocart button
+When User click shopping_cart

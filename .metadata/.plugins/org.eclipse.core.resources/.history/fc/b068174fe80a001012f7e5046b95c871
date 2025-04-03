@@ -1,0 +1,21 @@
+package testNG;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.Test;
+
+public class parallel2 {
+	 LocalDateTime obj = LocalDateTime.now();
+	  DateTimeFormatter myformobj = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm.ss");
+	  String formattedDate = obj.format(myformobj);
+	  WebDriver dr1 = new EdgeDriver();
+  @Test
+  public void test2() {
+	  System.out.println("In Edge ");
+	  System.out.println(formattedDate);
+	  dr1.get("https://www.saucedemo.com/");
+  }
+}

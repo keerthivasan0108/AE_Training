@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;mvn_prj2_cucumber/src/test/resource/Features2/Check_out.feature&apos; to &apos;3_Check_out.feature&apos;" description="Rename resource &apos;Check_out.feature&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/test/resource/Features2/Check_out.feature" name="3_Check_out.feature" stamp="1743422640103" updateReferences="true"/>
+</session>

@@ -1,0 +1,10 @@
+package pkg1;
+
+import Utilities.common_methods;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class New_window extends common_methods{
+	WebDriver dr = new ChromeDriver();
+	dr.navigate.to("https://www.google.com");
+}

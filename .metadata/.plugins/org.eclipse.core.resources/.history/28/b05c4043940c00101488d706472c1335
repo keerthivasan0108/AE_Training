@@ -1,0 +1,5 @@
+Feature: Add to cart
+When User click add to cart
+When User click shopping_cart
+When User click checkout
+

@@ -1,0 +1,55 @@
+package stepdef1;
+
+import static org.testng.Assert.assertEquals;
+
+import org.openqa.selenium.By;
+
+import io.cucumber.java.en.When;
+import utilities.common_methods;
+
+public class Add_to_cart extends common_methods{
+	public static String product;
+
+	@When("User choose \"(.*)")
+	public void click_category() {
+		dr.findElement(By.xpath("//div[@class='block block-category-navigation']/div[2]//a[@href='/books']")).click();
+	}
+	
+	@When("User Click on \"(.*)")
+	public void user_click_on_product(String name) {
+	    
+		
+		product = dr.findElement(By.xpath("//div[@class='product-grid']/div[1]/div//h2")).getText();
+		System.out.println(product);
+//		dr.findElement(By.xpath("//div[@class='product-grid']//div[@class='picture']//a[@href='/computing-and-internet']")).click();
+		dr.findElement(By.linkText(name)).click();
+		
+	}
+	@When("User Click Add to cart")
+	public void user_click_add_to_cart() {
+	    
+		dr.findElement(By.className("qty-input")).clear();
+		dr.findElement(By.className("qty-input")).sendKeys("2");
+//		
+	    dr.findElement(By.id("add-to-cart-button-13")).click();
+	    dr.findElement(By.xpath("//div[@class='block block-category-navigation']/div[2]//a[@href='/books']")).click();
+	    
+	}
+	@When("User Click on Shopping cart")
+	public void user_click_on_shopping_cart() {
+	    
+		dr.findElement(By.xpath("//li[@id='topcartlink']//span[@class='cart-label']")).click();
+	}
+	@When("User click checkout")
+	public void user_click_checkout() {
+	    
+	    String s = dr.findElement(By.xpath("//td[@class='product']/a")).getText();
+	    assertEquals(s,product);
+		String b = dr.findElement(By.className("qty-input")).getDomAttribute("value");
+
+	    
+	    
+	}
+	
+	
+}

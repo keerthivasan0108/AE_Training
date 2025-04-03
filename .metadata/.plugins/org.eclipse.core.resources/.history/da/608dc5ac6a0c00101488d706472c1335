@@ -1,0 +1,13 @@
+Feature: Login feature
+
+Scenario: Verify login is successfull with valid login credentials
+Given Login page is displayed 
+When User enters username and password
+When Login button clicked
+Then The application should display the message Products
+
+Examples:
+
+| username	    |	password	    |	message	  |
+| standard_user	|	secret_sause	|	Products	|
+| standard_user	|	secret_sause1	|	Epic sadface: Username and password do not match any user in this service	|

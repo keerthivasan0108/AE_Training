@@ -1,0 +1,13 @@
+package Utilities;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class common_methods {
+	public static WebDriver dr1;
+	public static void chrome_launcher(String s) {
+		dr1 = new ChromeDriver();
+		dr1.get(s);
+		dr1.manage().window().maximize();
+	}
+}

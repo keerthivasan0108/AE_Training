@@ -1,0 +1,8 @@
+package testNG;
+
+import Utilities.common_methods;
+
+public class New_window extends common_methods{
+	WebDriver dr = new ChromeDriver();
+	dr.navigate().to("")
+}

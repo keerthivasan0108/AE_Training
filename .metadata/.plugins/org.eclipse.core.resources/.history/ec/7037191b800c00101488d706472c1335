@@ -1,0 +1,18 @@
+package stepdef;
+
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import utilities.common_methods;
+
+public class hooks extends common_methods {
+	@Before
+	public void bfhook() {
+		Launch_chrome("https://www.saucedemo.com/");
+	    System.out.println("Before Hook");
+	}
+	@After
+	public void afhook() {
+		close_chrome();
+		System.out.println("After Hook");
+	}
+}

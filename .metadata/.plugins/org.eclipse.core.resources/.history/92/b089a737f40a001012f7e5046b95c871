@@ -1,0 +1,8 @@
+package testNG;
+
+public class FindElements extends Launcher{
+	public void FindEs() {
+		dr1.findElements("//div[@class='inventory_list']/div");
+		
+	}
+}

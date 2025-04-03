@@ -1,0 +1,16 @@
+package testNG;
+
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+public class SoftTest {
+	
+	SoftAssert sa =new SoftAssert();
+  @Test
+  public void test1() {
+	sa.assertEquals(true,true);
+	System.out.println("In test 1");
+	sa.assertAll();
+	  
+  }
+}
